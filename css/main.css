@@ -793,7 +793,7 @@ a {
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: var(--trns-fast) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
