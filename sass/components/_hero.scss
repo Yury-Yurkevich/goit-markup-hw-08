@@ -1,0 +1,66 @@
+.hero-section {
+    padding: 118px 0 118px 0;
+    margin: auto;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--background-color-dark);
+
+    // mobile
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_mob1.jpg');
+
+    //  retina mobile
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_mob2.jpg');
+        }
+        
+    // // tablet
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_tab1.jpg');
+        }
+    // //     // retina tab 
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_tab2.jpg');
+        }
+
+    // //     // desk
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_desk1.jpg');
+        
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0 200px 0;
+
+    }
+    // //     // retina desk
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url('../images/hero_img/hero_desk2.jpg');
+     }
+         
+}
+
+.hero-title {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--background-color-white);
+
+    @media screen and (min-width: $desktop) {
+        width: 696px;
+        font-size: 44px;
+    }
+}

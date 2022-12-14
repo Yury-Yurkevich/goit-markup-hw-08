@@ -1,0 +1,21 @@
+:root {
+    --button-color-blue: #2196F3;
+    --background-color-white: #ffffff;
+    --background-color-dark: #2F303A;
+    --background-color-light: #ECECEC;
+    --background-color-team: #F5F4FA;
+    --main-text-color-gray: #757575;
+    --main-text-color-black: #212121;
+    --logo-text-color-blue: #2196F3;
+    --logo-text-color-black: #212121;
+    --hover-focus-color-blue: #2196F3;
+    /* font */
+    --primary-font: 'Roboto', sans-serif;
+    /* animation */
+    --trns-fast: 250ms;
+    --trns-slow: 2500ms;
+}
+// brackpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

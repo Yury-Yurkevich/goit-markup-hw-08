@@ -1,0 +1,16 @@
+.portfolio-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        max-width: 326px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 575px;
+        margin: auto;
+    }
+
+}
