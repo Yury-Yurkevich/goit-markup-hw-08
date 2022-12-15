@@ -10,12 +10,16 @@
         justify-content: center;
     }
 }
+.portfolio__item {
+    width: 450px;
 
-// .portfolio__item {
-//     // display: inline-block;
-
-// }
-
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+    }
+}
 .portfolio__link {
     display: block;
 
@@ -36,7 +40,6 @@
 .portfolio__thumb {
     position: relative;
     overflow: hidden;
-
 }
 
 .portfolio__overlay-box {
@@ -68,11 +71,17 @@
 
 .portfolio__title {
     text-transform: capitalize;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
+    font-family: 'Roboto';
+        font-style: normal;
 }
+.portfolio__text-trasform-none {
+    text-transform: none;
+}
+
 .portfolio__paragraf {
     text-transform: capitalize;
     color: var(--main-text-color-gray);
@@ -82,5 +91,3 @@
     letter-spacing: 0.03em;
     font-weight: 400;
 }
-
-// font-size: 16px;

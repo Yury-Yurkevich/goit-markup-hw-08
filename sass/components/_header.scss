@@ -34,7 +34,7 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
-        margin-right: 96px;
+        margin-right: 90px;
     }
     
     @media screen and (min-width: $desktop) {
@@ -54,39 +54,19 @@
             display: flex;
             flex-direction: column;
             gap: 10px
-            
         }
-
     @media screen and (min-width: $desktop) {
             display: flex;
             flex-direction: row;
 
         }
-    
 }
 .header__mail-item {
-    
     display: flex;
     align-items: center;
     @media screen and (min-width: $desktop) {
         margin-right: 30px;
     }
-}
-.header__icons-mail {
-    transition-property: fill;
-    transition-duration: var(--trns-fast);
-    @media screen and (min-width: $desktop) {
-            width: 16px;
-            height: 12px;
-        }
-}
-.header__icons-phone {
-    transition-property: fill;
-    transition-duration: var(--trns-fast);
-    @media screen and (min-width: $desktop) {
-            width: 12px;
-            height: 16px;
-        }
 }
 .header__mail-link {
     display: flex;
@@ -99,23 +79,40 @@
     letter-spacing: 0.02em;
     color: var(--main-text-color-gray);
 
-
-    @media screen and (min-width: $desktop) {
-        font-size: 14px;
-
-    }
-
     transition-property: color;
     transition-duration: var(--trns-fast);
+    
+    @media screen and (min-width: $desktop) {
+            font-size: 14px;
+        }
 
     &:hover,
     &:focus {
         color: var(--hover-focus-color-blue);
     }
-
-    &:focus,
-    &:hover .header__icons {
+    &:focus .header__icon-mail,
+    &:hover .header__icon-mail {
         fill: #188CE8;
+    }
+    
+}
+
+.header__icon-mail {
+    transition-property: fill;
+    transition-duration: var(--trns-fast);
+
+    @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.header__icon-phone {
+    transition-property: fill;
+    transition-duration: var(--trns-fast);
+
+    @media screen and (min-width: $desktop) {
+        width: 12px;
+        height: 16px;
     }
 }
 .header__phone-item {
@@ -127,26 +124,24 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color-gray);
 
-
-    @media screen and (max-width: 1199px) {
-        font-size: 12px;
-    }
-
     transition-property: color;
     transition-duration: var(--trns-fast);
 
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
     &:hover,
     &:focus {
         color: var(--hover-focus-color-blue);
     }
-
-    &:focus,
-    &:hover .header__icons {
+    &:hover .header__icon-phone,
+    &:focus .header__icon-phone {
         fill: #188CE8;
     }
 }
