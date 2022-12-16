@@ -403,7 +403,7 @@ a {
     background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url("../images/hero_img/hero_tab1.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url("../images/hero_img/hero_tab2.jpg");
   }
@@ -413,14 +413,14 @@ a {
     background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url("../images/hero_img/hero_desk1.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero-section {
-    padding: 200px 0 200px 0;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url("../images/hero_img/hero_desk2.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 1200px) {
+  .hero-section {
+    padding: 200px 0 200px 0;
   }
 }
 
